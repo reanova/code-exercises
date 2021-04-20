@@ -1,0 +1,16 @@
+<div class="onemorecontainer">
+    <div class="projectslist">
+        <h2>Projects</h2>
+        {{>projectList}}
+        <br>
+        <button class="home" onclick="location.href='/'">HOME</a>
+    </div>
+    <div class="viewproject">
+        <h2 class="title">{{selectedProject.name}}</h2>
+        <img class="descriptionimage" src="/{{selectedProject.directory}}/screenshot.png" alt="">
+        <p class="tellmemore">{{selectedProject.description}}</p>
+        <br>
+        <button class="launch" onclick="location.href='/{{selectedProject.directory}}'" type="button">
+         LAUNCH</button>
+    </div>
+</div>

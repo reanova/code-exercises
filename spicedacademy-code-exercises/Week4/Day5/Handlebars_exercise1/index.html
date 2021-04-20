@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <title>Handlebars</title>
+    </head>
+
+    <body>
+        <h1>✍ Reknown Authors ✍</h1>
+
+        <div class="author-info"></div>
+
+        <script id="authordetails" type="text/x-handlebars-template">
+            {{#authors}}
+            <div class="card">
+                <h2>Name: {{name}}</h2>
+                <h3>born: {{born}}</h3>
+                <h3>died: {{died}}</h3>
+                <h3>Selected Work:</h3>
+                <ul>
+                    {{#selectedWritings}}
+                    <li>{{.}}</li>
+                    {{/selectedWritings}}
+                </ul>
+                <h3>Famous quote:</h3>
+                <em>'{{quote}}'</em>
+                <img src="{{photo}}" alt="portrait">
+
+            </div>
+            {{/authors}}
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

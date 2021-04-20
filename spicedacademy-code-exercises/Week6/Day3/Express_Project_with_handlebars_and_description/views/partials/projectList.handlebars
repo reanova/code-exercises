@@ -1,0 +1,9 @@
+{{#projectsData}}
+    <div class="projects">   
+        {{#if ../welcome}}
+        <a href="/projects/{{directory}}"><img class="welcome" src="/{{directory}}/screenshot.png" alt=""><p>{{name}}</p></a>
+        {{else}}
+        <a class="titlesdescription {{setClassInd name}}" href="/projects/{{directory}}">{{name}}</a>
+        {{/if}}
+    </div>
+{{/projectsData}}

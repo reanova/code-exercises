@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 70px 1fr 30px;
+}
+
+header {
+    background-color: orange;
+}
+
+footer {
+    background-color: pink;
+}
+
+main {
+    background-color: dimgrey;
+}

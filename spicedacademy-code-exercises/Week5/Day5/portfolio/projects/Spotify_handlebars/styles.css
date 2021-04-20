@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+}
+
+#container1 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#badlogo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+    color: white;
+}
+
+#container2 {
+    display: grid;
+    grid-template-rows: 50px 1fr 20px;
+    grid-template-columns: 1fr 2fr 80px 70px 1fr;
+    margin-bottom: 30px;
+}
+
+input {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 1.5em;
+}
+
+select {
+    grid-row: 1;
+    grid-column: 3;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+    font-weight: bold;
+    background-color: #a7aaa3;
+}
+
+select:hover {
+    box-shadow: inset 5px 3px 8px 2px rgba(89, 102, 95, 0.582);
+}
+
+.submit-button {
+    grid-row: 1;
+    grid-column: 4;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+    font-weight: bold;
+    background-color: #a7aaa3;
+}
+
+.submit-button:hover {
+    box-shadow: inset 5px 3px 8px 2px rgba(89, 102, 95, 0.582);
+}
+
+.results-container {
+    grid-area: 2 / 2 / 2 / 5;
+    color: #9cc5a1;
+    font-size: 1.5em;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    background-color: #a7c957;
+    font-weight: bold;
+}
+
+.more-results {
+    grid-area: 3 / 2 / 3 / 5;
+    height: 50px;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+    visibility: hidden;
+    padding: 20px;
+    background-color: #a7aaa3;
+    border-radius: 20px;
+}
+
+.more-results:hover {
+    box-shadow: inset 5px 3px 8px 2px rgba(89, 102, 95, 0.582);
+}
+
+#spotify-display {
+    grid-area: 2 / 2 / 3 / 5;
+    height: 170px;
+}
+
+#spotify-display:hover {
+    background-color: #a7c957;
+    box-shadow: inset 0 3px 8px 0 rgba(92, 97, 94, 0.582);
+}
+
+#spotify-display img {
+    margin-top: 5px;
+    display: inline;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    color: #9cc5a1;
+}
+
+#spotify-display img:hover {
+    width: 155px;
+    height: 155px;
+    box-shadow: inset 0 3px 8px 0 rgba(92, 97, 94, 0.582);
+}
+
+#spotify-display h3 {
+    display: inline;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#spotify-display h3:hover {
+    color: black;
+    font-size: 20px;
+    font-family: "Questrial", sans-serif;
+    font-family: "Spartan", sans-serif;
+    font-weight: bold;
+}

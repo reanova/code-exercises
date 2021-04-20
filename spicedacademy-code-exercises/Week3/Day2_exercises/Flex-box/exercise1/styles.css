@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+header {
+    background-color: orange;
+    flex-basis: 70px;
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+}
+
+main {
+    background-color: grey;
+    flex-grow: 2;
+}
+
+footer {
+    align-self: flex-end;
+    flex-basis: 30px;
+    background-color: pink;
+    width: 100%;
+}

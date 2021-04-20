@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: salmon;
+}
+
+#kitties {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#kitties img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translateX(100%);
+}
+
+#kitties img.onscreen {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+#kitties img.exit {
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+#dotters {
+    position: absolute;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+}
+
+.dots {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+    border: 2px white solid;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.dots.on {
+    background-color: white;
+    pointer-events: none;
+}
+
+#bottom {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 5.5em;
+    text-align: center;
+    margin-top: 10%;
+}
+
+@media (max-width: 414px) {
+    #carousel {
+        height: 100vh;
+    }
+}
+
+@media (max-height: 736px) and (orientation: landscape) {
+    #carousel {
+        height: 100vh;
+    }
+}
+/* could not work it out when adding - and (orientation landscape) (probably due to object-fit)
+but when toggling view the carousel is properly filling the screen */

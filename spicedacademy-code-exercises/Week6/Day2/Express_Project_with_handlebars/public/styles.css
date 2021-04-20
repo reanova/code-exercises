@@ -1,0 +1,82 @@
+* {
+    font-family: "Signika", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-image: url("colorful-background-texture-multi-color-orange-illustration-3840x2715-3104.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    padding-top: 150px;
+}
+
+footer {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 2vh;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 5px;
+    right: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+img {
+    width: 220px;
+    height: 220px;
+    border: rgba(19, 18, 39, 0.7) 5px solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img:hover {
+    width: 220px;
+    height: 220px;
+}
+
+h1 {
+    font-size: 7vh;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+a {
+    font-size: 3vh;
+    color: #fffbfe;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+
+a:hover {
+    color: #061131;
+    font-weight: bolder;
+}
+
+.projects {
+    align-self: center;
+    border-radius: 10px;
+}
+
+.projects:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    color: #d0cfcf;
+}

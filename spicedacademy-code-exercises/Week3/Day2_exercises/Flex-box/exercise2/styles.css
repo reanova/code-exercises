@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: dimgray;
+    align-items: stretch;
+}
+
+header {
+    background-color: orange;
+    flex-basis: 70px;
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+img {
+    align-self: center;
+}
+
+footer {
+    align-self: flex-end;
+    flex-basis: 30px;
+    background-color: pink;
+    width: 100%;
+}

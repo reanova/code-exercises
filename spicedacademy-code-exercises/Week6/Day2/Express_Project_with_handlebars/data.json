@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Connect Four",
+        "directory": "Connect%20Four"
+    },
+    {
+        "name": "DoggoPanes",
+        "directory": "DoggoPanes"
+    },
+    {
+        "name": "Kitty Carousel",
+        "directory": "Kitty%20Carousel"
+    },
+    {
+        "name": "Spotify Search",
+        "directory": "Spotify%20Search"
+    },
+    {
+        "name": "Ticker",
+        "directory": "Ticker"
+    }
+]

@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fbfbf2;
+    font-family: "Fraunces", serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2,
+h3,
+h4 {
+    margin: 0;
+    color: #847577;
+}
+
+body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25vw;
+    display: inline-block;
+    background-color: #cfd2cd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    margin: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    color: #565264;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    color: #706677;
+    background-color: #e5e6e4;
+}
+
+img {
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    margin-top: 5px;
+}

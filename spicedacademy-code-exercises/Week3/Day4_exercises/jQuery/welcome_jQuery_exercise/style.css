@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+html.hamburger {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia;
+    background: #fff;
+}
+
+header {
+    height: 70px;
+    padding: 20px 40px;
+}
+
+header img {
+    margin: -5px 0 0 -5px;
+    height: 40px;
+}
+
+header #menu {
+    float: right;
+}
+
+header #menu img {
+    margin: 0;
+    height: 30px;
+}
+
+#splash {
+    position: relative;
+}
+
+#splash img {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+#splash .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#splash .message {
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    font-style: italic;
+    transform: translateY(-50%);
+    padding: 0 40px;
+}
+
+#get-started {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 3px #c60 solid;
+    background: #fc3;
+    color: #333;
+    width: 250px;
+    line-height: 40px;
+    font-size: 26px;
+    color: #c60;
+    font-style: normal;
+}
+
+#benefits {
+    background: #ccc;
+    padding: 40px;
+    text-align: center;
+}
+
+.benefit {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    padding: 0 20px 0 70px;
+    width: 45%;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.benefit h4 {
+    margin: 0;
+}
+
+.benefit .icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 40px;
+}
+
+footer {
+    padding: 10px 40px;
+    color: #eee;
+    background: #666;
+    font-size: 12px;
+}
+
+.overlay-dark {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.side-nav {
+    background-color: white;
+    position: fixed;
+    left: 100%;
+    height: 100vh;
+    width: 30%;
+    top: 0;
+    visibility: hidden;
+    transition: 2s;
+    z-index: 12;
+    transition: 2s;
+}
+
+.side-nav a {
+    font-size: 1.5em;
+    right: 80%;
+    text-decoration: none;
+    z-index: 13;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    display: block;
+}
+
+#logout {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.on {
+    transition-property: transform;
+    transform: translateX(-80%);
+    visibility: visible;
+    transition-duration: 2s;
+}
+
+.ontwo {
+    visibility: visible;
+}
+
+#close-nav {
+    height: 20px;
+    width: 20px;
+    text-align: right;
+    display: block;
+    padding-left: 70%;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#thexfactor {
+    color: dimgray;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 70px;
+        padding: 20px;
+    }
+
+    #splash .message {
+        font-size: 20px;
+        transform: none;
+        top: 0;
+        margin-top: 50px;
+    }
+
+    #get-started {
+        margin-top: 20px;
+        width: 250px;
+        line-height: 30px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .benefit {
+        width: auto;
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body,
+    #benefits {
+        background-color: #333333;
+        color: white;
+    }
+
+    #get-started {
+        background-color: #333333;
+    }
+
+    #splash .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}

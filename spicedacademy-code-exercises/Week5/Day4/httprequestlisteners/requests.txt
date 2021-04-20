@@ -1,0 +1,6 @@
+Thu Feb 04 2021 17:28:01 GMT+0100 (Central European Standard Time) GET / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36
+Thu Feb 04 2021 17:28:02 GMT+0100 (Central European Standard Time) GET /favicon.ico Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36
+Thu Feb 04 2021 17:28:14 GMT+0100 (Central European Standard Time) GET / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36
+Thu Feb 04 2021 17:28:14 GMT+0100 (Central European Standard Time) GET /favicon.ico Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36
+Thu Feb 04 2021 17:28:30 GMT+0100 (Central European Standard Time) GET / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36
+Thu Feb 04 2021 17:28:30 GMT+0100 (Central European Standard Time) GET /favicon.ico Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36

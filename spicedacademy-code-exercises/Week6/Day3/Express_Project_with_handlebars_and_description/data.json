@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Connect Four",
+        "directory": "ConnectFour",
+        "description": "Retro fun for the whole family but also for the PC"
+    },
+    {
+        "name": "DoggoPanes",
+        "directory": "DoggoPanes",
+        "description": "A before & after when you groom your doggo"
+    },
+    {
+        "name": "Kitty Carousel",
+        "directory": "KittyCarousel",
+        "description": "Your favourite slideshow if your soul is a cat lady"
+    },
+    {
+        "name": "Spotify Search",
+        "directory": "SpotifySearch",
+        "description": "Search for your fav artists and albums outside of Spotify with the help of Spotify's API (sort of)"
+    },
+    {
+        "name": "Ticker",
+        "directory": "Ticker",
+        "description": "Old school way of serving the only truth"
+    }
+]

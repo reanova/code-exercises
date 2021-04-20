@@ -1,0 +1,11 @@
+#smallCanvas {
+    border: 3px solid black;
+}
+
+#bigCanvas {
+    border: 3px solid black;
+}
+
+#homer {
+    display: none;
+}

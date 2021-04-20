@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(70, 44, 11, 0.527);
+}
+
+h1 {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    font-family: "Paytone One", sans-serif;
+    display: block;
+    z-index: 100;
+    font-weight: 800;
+    font-size: 3em;
+    color: white;
+}
+
+#box {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 850px;
+    position: relative;
+    top: 80px;
+    box-shadow: 0 8px 16px 5px rgba(0, 0, 0, 0.4);
+}
+
+.pane {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+img {
+    width: 1200px;
+    height: 1050px;
+    object-fit: cover;
+}
+
+#pane1 {
+    z-index: 100;
+    background: #cc6600;
+    width: 50%;
+}
+
+#pane2 {
+    background: #ffcc00;
+}
+
+#slide {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 100%;
+    background: rgba(58, 37, 10, 0.726);
+    box-shadow: 0px 0px 15px -5px rgba(35, 28, 20, 0.94);
+    cursor: pointer;
+}
+
+#slide:active {
+    box-shadow: inset 0 8px 10px 3px rgba(0, 0, 0, 0.4);
+}

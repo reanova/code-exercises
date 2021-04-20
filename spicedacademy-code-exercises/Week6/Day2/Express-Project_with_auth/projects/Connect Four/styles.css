@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.slot {
+    /*background-color: blue;*/
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hole {
+    /*background-color: antiquewhite;*/
+    height: 80px;
+    width: 80px;
+    transform: translate(-30px, -30px);
+    border: 40px solid blue;
+    box-shadow: inset 5px 3px 8px 2px rgba(89, 102, 95, 0.582);
+    border-radius: 50%;
+}
+
+header {
+    height: 5vw;
+    margin-top: 2%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.redturn,
+.yellowturn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-self: space-around;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.redturn {
+    background-color: red;
+}
+
+.yellowturn {
+    background-color: yellow;
+}
+
+.redturn.on {
+    opacity: 1;
+    transition-property: all 1s;
+    transform: scale(1.1);
+}
+
+.yellowturn.on {
+    opacity: 1;
+    transition-property: all 1s;
+    transform: scale(1.1);
+}
+
+#uppercontainer {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.single {
+    align-self: flex-start;
+}
+
+.restart {
+    align-self: flex-end;
+}
+
+button:active {
+    box-shadow: 5px 5px 5px black;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    margin: 20px;
+    width: 200px;
+    height: 110px;
+    align-self: center;
+    padding: 5px;
+    background-color: #2a7221;
+    display: inline;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 20px;
+}
+
+#board {
+    display: flex;
+    align-self: center;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: yellow;
+}
+
+.keyhole {
+    z-index: -40;
+    position: relative;
+    visibility: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.keyhole.on {
+    visibility: visible;
+}
+
+.keyhole.player1 {
+    background-color: red;
+}
+
+.keyhole.player2 {
+    background-color: yellow;
+}
+
+.movingSlot {
+    z-index: -2;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: all 100ms;
+}
+
+.movingSlot.on {
+    background-color: yellow;
+}
+
+.movingSlot.fall {
+    transition: 700ms;
+    transform: translateY(1000px);
+}
+
+.keyhole.fall {
+    transition: 700ms;
+    transform: translateY(1000px);
+}
+
+.anothercontainer {
+    width: 50%;
+    height: 37%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    background-color: rgb(241, 234, 224);
+    border: 2px solid black;
+    box-shadow: 0.6rem 0.6rem grey;
+    z-index: 4;
+    transition-delay: 2000ms;
+}
+
+.textyelloworred {
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 1%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.disappear {
+    visibility: hidden;
+}
+
+p {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#img1 {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    content: "redcoin.gif";
+    left: 35%;
+}
+
+#img2 {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    position: absolute;
+    content: "yellowcoin.gif";
+    left: 35%;
+}
+
+.notshow {
+    visibility: hidden;
+}

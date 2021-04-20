@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+
+#head {
+    width: 70px;
+    height: 70px;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 123px;
+    z-index: 1;
+    transform-origin: center bottom;
+}
+
+.arms {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+}
+
+#torso {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 156px;
+}
+
+.legs {
+    width: 6px;
+    height: 140px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+}
+
+#leftleg {
+    top: 175px;
+    left: 155px;
+    transform: rotate(12deg);
+    transform-origin: top;
+}
+
+#rightleg {
+    top: 175px;
+    left: 156px;
+    transform: rotate(-12deg);
+    transform-origin: top;
+}
+
+.arms {
+    width: 100px;
+    height: 6px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+}
+
+#leftarm {
+    top: 86px;
+    left: 57px;
+    transform-origin: 100%;
+}
+
+#rightarm {
+    top: 86px;
+    left: 161px;
+    transform-origin: 0%;
+}

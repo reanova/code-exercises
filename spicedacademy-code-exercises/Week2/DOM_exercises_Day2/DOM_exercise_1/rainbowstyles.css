@@ -1,0 +1,8 @@
+#pointerBox {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: black;
+    top: 48px;
+    left: 102px;
+}
